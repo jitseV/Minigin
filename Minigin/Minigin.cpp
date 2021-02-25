@@ -40,6 +40,8 @@ void dae::Minigin::Initialize()
 	}
 
 	Renderer::GetInstance().Init(m_Window);
+
+	
 }
 
 /**

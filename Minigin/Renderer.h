@@ -22,7 +22,11 @@ namespace dae
 
 		SDL_Renderer* GetSDLRenderer() const { return m_Renderer; }
 	private:
+		int GetOpenGLDriverIndex();
 		SDL_Renderer* m_Renderer{};
+		SDL_Window* m_Window{};
+
+		bool m_ShowDemo{false};
 	};
 }
 
