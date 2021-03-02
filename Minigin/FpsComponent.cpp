@@ -20,7 +20,7 @@ void dae::FpsComponent::Update(GameObject*)
 	{
 		if (m_pTextComponent != nullptr)
 		{
-			std::string text{ "FPS: " + std::to_string(int(m_FrameCounter / m_TimePerDraw)) };
+			const std::string text{ "FPS: " + std::to_string(int(m_FrameCounter / m_TimePerDraw)) };
 			m_pTextComponent->SetText(text);
 		}
 		else
