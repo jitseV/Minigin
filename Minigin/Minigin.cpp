@@ -75,7 +75,7 @@ void dae::Minigin::LoadGame() const
 	//make fps game object
 	GameObject* fpsGO{ new GameObject() };
 	Component* pText = new TextComponent("FPS: ", "Data/Lingua.otf", 40);
-	Component* pFPS = new FpsComponent();
+	Component* pFPS = new FpsComponent(dynamic_cast<TextComponent*>(pText));
 	fpsGO->AddComponent(pText);
 	fpsGO->AddComponent(pFPS);
 	scene.Add(fpsGO);

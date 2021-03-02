@@ -9,7 +9,7 @@ namespace dae
 	class FpsComponent : public Component
 	{
 	public:
-		FpsComponent();
+		FpsComponent(TextComponent* pTextComponent, const float timePerDraw = 1.0f);
 		~FpsComponent() = default;
 
 		void Update(GameObject* gameObject) override;
@@ -17,8 +17,9 @@ namespace dae
 
 	private:
 		TextComponent* m_pTextComponent; //not owner
-
-
+		float m_FrameCounter;
+		float m_TimeCounter;
+		const float m_TimePerDraw;
 	};
 
 }
