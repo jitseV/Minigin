@@ -23,6 +23,9 @@
     <Filter Include="imgui">
       <UniqueIdentifier>{35889cc9-2f3b-49cc-85a1-215072728426}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Commands">
+      <UniqueIdentifier>{e01f1af1-2bc9-4c76-9e10-a08d966b9b43}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Component.h">
@@ -33,9 +36,6 @@
     </ClInclude>
     <ClInclude Include="RenderComponent.h">
       <Filter>Components</Filter>
-    </ClInclude>
-    <ClInclude Include="InputManager.h">
-      <Filter>Managers and Singletons</Filter>
     </ClInclude>
     <ClInclude Include="ResourceManager.h">
       <Filter>Managers and Singletons</Filter>
@@ -100,6 +100,24 @@
     <ClInclude Include="..\3rdParty\imgui-1.81\imgui_impl_sdl.h">
       <Filter>imgui</Filter>
     </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>Managers and Singletons</Filter>
+    </ClInclude>
+    <ClInclude Include="Command.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="DuckCommand.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="FartCommand.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="FireCommand.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="JumpCommand.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameObject.cpp">
@@ -107,9 +125,6 @@
     </ClCompile>
     <ClCompile Include="RenderComponent.cpp">
       <Filter>Components</Filter>
-    </ClCompile>
-    <ClCompile Include="InputManager.cpp">
-      <Filter>Managers and Singletons</Filter>
     </ClCompile>
     <ClCompile Include="ResourceManager.cpp">
       <Filter>Managers and Singletons</Filter>
@@ -170,6 +185,21 @@
     </ClCompile>
     <ClCompile Include="..\3rdParty\imgui-1.81\imgui_impl_sdl.cpp">
       <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>Managers and Singletons</Filter>
+    </ClCompile>
+    <ClCompile Include="DuckCommand.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="FartCommand.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="FireCommand.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="JumpCommand.cpp">
+      <Filter>Commands</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

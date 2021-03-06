@@ -1,7 +1,14 @@
 #include "MiniginPCH.h"
 #include "InputManager.h"
 #include <SDL.h>
+#include "Windows.h"
+#include <Xinput.h>
 
+
+void InputManager::SetCommandToButton(ControllerButton button, Command* pCommand)
+{
+	m_pCommands.insert(std::pair<ControllerButton, Command*>(button, pCommand));
+}
 
 bool dae::InputManager::ProcessInput()
 {

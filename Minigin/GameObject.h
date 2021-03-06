@@ -1,9 +1,8 @@
 #pragma once
 #include "Transform.h"
-
 #include <vector>
-
 #include "Component.h"
+
 namespace dae
 {
 	class GameObject final
